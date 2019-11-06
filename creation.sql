@@ -27,11 +27,11 @@ SET FOREIGN_KEY_CHECKS=1;
 
 CREATE TABLE employee
 	(VAT INTEGER,
-	name VARCHAR(15),
+	name VARCHAR(35),
 	birth_date DATE,
 	street VARCHAR(35),
-	city VARCHAR(15),
-	zip VARCHAR(15),
+	city VARCHAR(35),
+	zip VARCHAR(35),
 	IBAN INTEGER,
 	salary INTEGER,
 	PRIMARY KEY(VAT),
@@ -70,7 +70,7 @@ CREATE TABLE nurse
 
 CREATE TABLE client
 	(VAT INTEGER,
-	name VARCHAR(15),
+	name VARCHAR(35),
 	birth_date DATE,
 	street VARCHAR(35),
 	city VARCHAR(15),
@@ -139,20 +139,20 @@ CREATE TABLE consultation_assistant
 	(VAT_doctor INTEGER,
 	date_timestamp TIMESTAMP,
 	VAT_nurse INTEGER,
-	PRIMARY KEY(VAT_doctor, date_timestamp),
+	PRIMARY KEY(VAT_doctor, date_timestamp, VAT_nurse),
 	FOREIGN KEY(VAT_doctor, date_timestamp) REFERENCES appointment(VAT_doctor, date_timestamp) ON DELETE CASCADE,
 	FOREIGN KEY(VAT_nurse) REFERENCES nurse(VAT) ON DELETE CASCADE);
 
 
 CREATE TABLE diagnostic_code
-	(ID INTEGER,
+	(ID VARCHAR(15),
 	description VARCHAR(255),
 	PRIMARY KEY(ID));
 	
 
 CREATE TABLE diagnostic_code_relation
-	(ID1 INTEGER,
-	ID2 INTEGER,
+	(ID1 VARCHAR(15),
+	ID2 VARCHAR(15),
 	type_ VARCHAR(255),
 	PRIMARY KEY(ID1, ID2),
 	FOREIGN KEY(ID1) REFERENCES diagnostic_code(ID) ON DELETE CASCADE,
@@ -162,24 +162,24 @@ CREATE TABLE diagnostic_code_relation
 CREATE TABLE consultation_diagnostic
 	(VAT_doctor INTEGER,
 	date_timestamp TIMESTAMP,
-	ID INTEGER,
+	ID VARCHAR(15),
 	PRIMARY KEY(VAT_doctor, date_timestamp, ID),
 	FOREIGN KEY(VAT_doctor, date_timestamp) REFERENCES consultation(VAT_doctor, date_timestamp) ON DELETE CASCADE,
 	FOREIGN KEY(ID) REFERENCES diagnostic_code(ID) ON DELETE CASCADE);
 	
 
 CREATE TABLE medication
-	(name VARCHAR(15),
+	(name VARCHAR(35),
 	lab VARCHAR(35),
 	PRIMARY KEY(name, lab));
 
 
 CREATE TABLE prescription
-	(name VARCHAR(15),
+	(name VARCHAR(35),
 	lab VARCHAR(35),
 	VAT_doctor INTEGER,
 	date_timestamp TIMESTAMP,
-	ID INTEGER,
+	ID VARCHAR(15),
 	dosage INTEGER,
 	description VARCHAR(255),
 	PRIMARY KEY(name, lab, VAT_doctor, date_timestamp, ID),
@@ -189,13 +189,13 @@ CREATE TABLE prescription
 		
 	
 CREATE TABLE proceduretable
-	(name VARCHAR(15),
+	(name VARCHAR(35),
 	type_ VARCHAR(35),
 	PRIMARY KEY(name));
 	
 	
 CREATE TABLE procedure_in_consultation
-	(name VARCHAR(15),
+	(name VARCHAR(35),
 	VAT_doctor INTEGER,
 	date_timestamp TIMESTAMP,
 	description VARCHAR(255),
@@ -205,7 +205,7 @@ CREATE TABLE procedure_in_consultation
 
 
 CREATE TABLE procedure_radiology
-	(name VARCHAR(15),
+	(name VARCHAR(35),
 	file_ VARCHAR(35),
 	VAT_doctor INTEGER,
 	date_timestamp TIMESTAMP,
@@ -222,7 +222,7 @@ CREATE TABLE teeth
 	
 
 CREATE TABLE procedure_charting
-	(name VARCHAR(15),
+	(name VARCHAR(35),
 	VAT INTEGER,
 	date_timestamp TIMESTAMP,
 	quadrant INTEGER,
