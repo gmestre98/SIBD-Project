@@ -206,7 +206,7 @@ CREATE TABLE procedure_in_consultation
 
 CREATE TABLE procedure_radiology
 	(name VARCHAR(35),
-	file_ VARCHAR(35),
+	file_ VARCHAR(255),
 	VAT_doctor INTEGER,
 	date_timestamp TIMESTAMP,
 	PRIMARY KEY(name, file_, VAT_doctor, date_timestamp),
