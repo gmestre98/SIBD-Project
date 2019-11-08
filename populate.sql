@@ -248,9 +248,9 @@ INSERT INTO employee VALUES (977442098,'Peter Jaillet', '1991-10-26','Broom Bank
 						   (977444924,'Monet Todd', '1932-9-28','Willowhayne Gardens', 'London', '5436-391', 'F', 87),
 						   (977444925,'Laura Creager', '2000-6-3','Dove Heath', 'Murfreesboro', '4654-574', 'M', 19),
 						   (977444926,'Melaine Kuchera', '1921-10-8','Magdalen Gardens', 'Moscow', '6406-647', 'M', 98),
-						   (977444927,'Vivien Fraizer  ', '1950-12-27','Old Rectory Hollies', 'Salt Lake City', '5511-574', 'F', 69),
-						   (977444928,'Goncalo Mestre  ', '1998-10-3','IST', 'Lisbon', '2355-563', 'M', 21);
-						   (977444929,'Afonso Costa  ', '1997-9-1','IST', 'Lisbon', '2742-456', 'M', 22);
+						   (977444927,'Vivien Fraizer', '1950-12-27','Old Rectory Hollies', 'Salt Lake City', '5511-574', 'F', 69),
+						   (977444928,'Goncalo Mestre', '1998-10-3','IST', 'Lisbon', '2355-563', 'M', 21),
+						   (977444929,'Afonso Costa', '1997-9-1','IST', 'Lisbon', '2742-456', 'M', 22);
 
 
 
@@ -8121,19 +8121,19 @@ INSERT INTO employee VALUES (977442098,'Peter Jaillet', '1991-10-26','Broom Bank
 
 
 
- INSERT INTO procedure_radiology VALUES ('Temporary restoration', 'C:\Users\whitesmile\radiology\0', 977442108, '2019-1-9 13:00:00'),
-										('Temporary restoration', 'C:\Users\whitesmile\radiology\1', 977442109, '2019-1-3 14:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\2', 977442110, '2019-1-4 19:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\3', 977442110, '2019-1-7 22:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\4', 977442111, '2019-1-7 23:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\5', 977442114, '2019-1-9 22:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\6', 977442114, '2019-1-12 22:00:00'),
-										('Temporary restoration', 'C:\Users\whitesmile\radiology\7', 977442115, '2019-1-4 7:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\8', 977442117, '2019-1-2 12:00:00'),
-										('Temporary restoration', 'C:\Users\whitesmile\radiology\9', 977442117, '2019-1-4 9:00:00'),
-										('Gum depigmentation', 'C:\Users\whitesmile\radiology\10', 977442117, '2019-1-4 23:00:00'),
-										('Temporary restoration', 'C:\Users\whitesmile\radiology\11', 977442118, '2019-1-2 14:00:00'),
-										('Temporary restoration', 'C:\Users\whitesmile\radiology\12', 977442120, '2019-1-11 21:00:00');
+ INSERT INTO procedure_radiology VALUES ('Temporary restoration', 'C:Userswhitesmileradiology0', 977442108, '2019-1-9 13:00:00'),
+										('Temporary restoration', 'C:Userswhitesmileradiology1', 977442109, '2019-1-3 14:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology2', 977442110, '2019-1-4 19:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology3', 977442110, '2019-1-7 22:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology4', 977442111, '2019-1-7 23:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology5', 977442114, '2019-1-9 22:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology6', 977442114, '2019-1-12 22:00:00'),
+										('Temporary restoration', 'C:Userswhitesmileradiology7', 977442115, '2019-1-4 7:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology8', 977442117, '2019-1-2 12:00:00'),
+										('Temporary restoration', 'C:Userswhitesmileradiology9', 977442117, '2019-1-4 9:00:00'),
+										('Gum depigmentation', 'C:Userswhitesmileradiology10', 977442117, '2019-1-4 23:00:00'),
+										('Temporary restoration', 'C:Userswhitesmileradiology11', 977442118, '2019-1-2 14:00:00'),
+										('Temporary restoration', 'C:Userswhitesmileradiology12', 977442120, '2019-1-11 21:00:00');
 
 
 

@@ -1,7 +1,7 @@
 SELECT e.name, t.VAT,     
     (SELECT e1.name
     FROM employee AS e1
-    WHERE e1.VAT = t.supervisor),
+    WHERE e1.VAT = t.supervisor) AS doctor_name,
     r.evaluation, r.description
 FROM trainee_doctor AS t, employee AS e, supervision_report AS r
 WHERE t.VAT = e.VAT
