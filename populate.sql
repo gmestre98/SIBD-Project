@@ -248,7 +248,10 @@ INSERT INTO employee VALUES (977442098,'Peter Jaillet', '1991-10-26','Broom Bank
 						   (977444924,'Monet Todd', '1932-9-28','Willowhayne Gardens', 'London', '5436-391', 'F', 87),
 						   (977444925,'Laura Creager', '2000-6-3','Dove Heath', 'Murfreesboro', '4654-574', 'M', 19),
 						   (977444926,'Melaine Kuchera', '1921-10-8','Magdalen Gardens', 'Moscow', '6406-647', 'M', 98),
-						   (977444927,'Vivien Fraizer  ', '1950-12-27','Old Rectory Hollies', 'Salt Lake City', '5511-574', 'F', 69);
+						   (977444927,'Vivien Fraizer  ', '1950-12-27','Old Rectory Hollies', 'Salt Lake City', '5511-574', 'F', 69),
+						   (977444928,'Goncalo Mestre  ', '1998-10-3','IST', 'Lisbon', '2355-563', 'M', 21);
+						   (977444929,'Afonso Costa  ', '1997-9-1','IST', 'Lisbon', '2742-456', 'M', 22);
+
 
 
 
@@ -324,7 +327,9 @@ INSERT INTO employee VALUES (977442098,'Peter Jaillet', '1991-10-26','Broom Bank
 										(977444925, 955832350),
 										(977444925, 955832359),
 										(977444926, 955832368),
-										(977444926, 955832377);
+										(977444926, 955832377),
+										(977444927, 945824568),
+										(977444928, 945335677);
 
 
 
@@ -1493,8 +1498,13 @@ INSERT INTO employee VALUES (977442098,'Peter Jaillet', '1991-10-26','Broom Bank
 								(977442120, '2019-1-13 11:00:00', 'He wants to bring his son', 977444894),
 								(977442120, '2019-1-13 14:00:00', 'Just checking', 977444906),
 								(977442120, '2019-1-13 17:00:00', 'Analisys', 977444859),
-								(977442120, '2019-1-13 19:00:00', 'He wants to get the teeth more white', 977444909);
-
+								(977442120, '2019-1-13 19:00:00', 'He wants to get the teeth more white', 977444909),
+								(977442120, '2019-2-13 14:00:00', 'Just checking', 977444928),
+								(977442120, '2019-2-13 17:00:00', 'Analisys', 977444928),
+								(977442120, '2019-2-13 19:00:00', 'He wants to get the teeth more white', 977444928),
+								(977442120, '2019-4-13 14:00:00', 'Just checking', 977444928),
+								(977442120, '2019-4-13 17:00:00', 'Analisys', 977444928),
+								(977442120, '2019-4-13 19:00:00', 'He wants to get the teeth more white', 977444928);
 
 
  INSERT INTO consultation VALUES (977442106, '2019-1-2 7:00:00', 'I believe in the future the teeth has to be removed', 'Integer pulvinar mi eu aliquam dapibus.', '', ''),
