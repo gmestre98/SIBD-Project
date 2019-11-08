@@ -76,7 +76,6 @@ INSERT INTO employee VALUES (413155812,'Peter Jaillet', '1969-12-26','Brunswick 
 										(413156503, 913108127),
 										(413156505, 913108131),
 										(413156505, 913108135),
-										(413156506, 913108136),
 										(413156507, 913108140),
 										(413156507, 913108144),
 										(413156509, 913108148),
@@ -107,9 +106,10 @@ INSERT INTO employee VALUES (413155812,'Peter Jaillet', '1969-12-26','Brunswick 
 
  INSERT INTO supervision_report VALUES (413155816, '2019-3-4 23:20:48', 'Quite good, but can improve a lot', 2),
 									   (413155816, '2019-5-12 8:14:38', 'Can be the Ronaldo of doctors', 2),
-									   (413155817, '2019-3-25 10:55:55', 'Being late every time, should send him to unemployment', 1),
+									   (413155817, '2019-3-25 10:55:55', 'Being late every time, should send him to unemployment', 5),
 									   (413155817, '2019-5-9 20:49:51', 'Being late every time, should send him to unemployment', 3),
-									   (413155817, '2019-7-23 15:28:53', 'Being late every time, should send him to unemployment', 2);
+									   (413155817, '2019-7-23 15:28:53', 'Being late every time, should send him to unemployment', 5),
+									   (413155817, '2019-9-25 10:55:55', 'He is really insufficient for this dental clinic', 4);
 
 
 
@@ -255,7 +255,7 @@ INSERT INTO employee VALUES (413155812,'Peter Jaillet', '1969-12-26','Brunswick 
 
 
 
- INSERT INTO consultation VALUES (413155814, '2019-1-2 7:00:00', '', 'periodontis', '', ''),
+ INSERT INTO consultation VALUES (413155814, '2019-1-2 7:00:00', '', 'periodontitis', '', ''),
 								 (413155814, '2019-1-2 22:00:00', 'Fusce aliquam diam ac tellus interdum pretium.', '', 'Maecenas hendrerit sollicitudin lacinia. Duis ex magna, ultrices id faucibus ac, consequat sit amet est. ', ''),
 								 (413155814, '2019-1-3 11:00:00', '', '', '', ''),
 								 (413155814, '2019-1-3 15:00:00', '', 'gingivitis', '', ''),
