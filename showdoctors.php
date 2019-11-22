@@ -11,8 +11,7 @@
     $connection = null;
     new_connection($connection);
 
-    $date = $_REQUEST['appdate'].' '.$_REQUEST['apphour'];
-
+    $date = $_REQUEST['appdate'].' '.$_REQUEST['apphour'].':00:00';
     $sql = "SELECT DISTINCT e.VAT, name
             FROM (employee AS e LEFT OUTER JOIN appointment AS a
             ON e.VAT = a.VAT_doctor) RIGHT OUTER JOIN doctor

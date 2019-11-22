@@ -42,15 +42,17 @@
                 AND ca.date_timestamp = :condate";
         $result = sql_secure_query($connection, $sql, Array(":condoctor" => $_REQUEST['appdvat'],
                                                             ":condate" => $_REQUEST['appdate']));
-        echo("<strong>Nurses involved: </strong><br>");
-        foreach($result as $row){
-            echo($row['name']);
-            echo(" - ");
-            echo($row['vat']);
-            echo("<br>");
+        $nrows = $result->rowCount();
+        if($nrows != 0){
+            echo("<strong>Nurses involved: </strong><br>");
+            foreach($result as $row){
+                echo($row['name']);
+                echo(" - ");
+                echo($row['vat']);
+                echo("<br>");
+            }
+            echo("<br>");    
         }
-        echo("<br>");
-
         $sql = "SELECT cd.ID AS ID, description
                 FROM diagnostic_code AS d, consultation_diagnostic AS cd
                 WHERE d.ID = cd.ID
@@ -66,6 +68,7 @@
                 echo($row['ID']);
                 echo("<br>");
                 echo($row['description']);
+                echo("<br>");
                 echo("<br>");
                 $sql = "SELECT name, lab, dosage, description
                         FROM prescription AS p

@@ -9,9 +9,10 @@
             <p> City: <input type="text" name="ccity"/></p>
             <p> Zip Code Part1: <input type="number" name="czip1" min="1000" max="9999"/></p>
             <p> Zip Code Part2: <input type="number" name="czip2" min="100" max="999"/></p>
-            <p> Gender: <input type="radio" name="cgender" value="male" checked> Male
-                        <input type="radio" name="cgender" value="female"> Female
+            <p> Gender: <input type="radio" name="cgender" value="M" checked> Male
+                        <input type="radio" name="cgender" value="F"> Female
                         <input type="radio" name="cgender" value="other"> Other </p>
+            <p> Age: <input type="number" name="cage" min="0" max ="<?200?>"
             <p> <input type="submit" value="Submit"/></p>
             <a href="searchclient.php"> Go to the First Page </a>
         </form>
